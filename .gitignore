@@ -1,3 +1,13 @@
+# Folders
+output/
+input/
+
+# Songs
+*.mp3
+
+# CSV
+*.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
