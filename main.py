@@ -17,11 +17,14 @@ def main():
         URLS = list(songs_df[0])
 
         ydl_opts = {
+        'writethumbnail': True,
         'format': 'mp3/bestaudio/best',
-        'postprocessors': [{
-            'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'mp3',
-        }],
+        'postprocessors': [
+                    {'key': 'FFmpegExtractAudio', 'preferredcodec': 'mp3'},
+                    {'key': 'FFmpegMetadata', 'add_metadata': 'True'},
+                    {'key': 'EmbedThumbnail'}
+                
+        ],
         'outtmpl':output_dir + '/' + filename + '/%(title)s.%(ext)s',
         }
 
