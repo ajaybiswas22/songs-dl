@@ -20,9 +20,29 @@ link1
 link2
 link3
 ```
-3. Run main.py
-4. The *output* folder will contain the extracted files.
+3. Install dependencies
+```
+pip install requirements.txt
+```
+4. Run main.py
+5. The *output* folder will contain the extracted files.
 ```
 output/file1/song1.mp3...
 output/file2/song1.mp3...
 ```
+
+### Issues
+
+If main.py fails to execute because of missing FFmpeg encoder. Install FFmpeg dependencies using the following command.
+
+#### Mac
+```
+brew install ffmpeg
+```
+
+#### Windows & Linux [Link](https://ffmpeg.org/download.html)
+
+
+
+
+
