@@ -22,7 +22,7 @@ link3
 ```
 3. Install dependencies
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 4. Run main.py
 5. The *output* folder will contain the extracted files.
